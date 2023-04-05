@@ -1,0 +1,80 @@
+Nom de domaine : mobile.pipe.aria.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns4-06.azure-dns.info
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : api-emea.flightproxy.teams.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns1-201.azure-dns.com
+Registrant du serveur autoritatifs : None
+ 
+Nom de domaine : emea.cc.skype.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns3-201.azure-dns.org
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : api.flightproxy.teams.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns3-201.azure-dns.org
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : substrate.office.co'
+Entreprise qui possède ce nom de domaine : ['CoDom Holdings, LLC', 'REDACTED FOR PRIVACY']
+Serveurs autoritatifs : ns2-ms-acdc.office.com
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : ocws.officeapps.live.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : a12-131.akagtm.org
+Registrant du serveur autoritatifs : ['Data Protected', 'REDACTED FOR PRIVACY']
+ 
+Nom de domaine : whiteboard.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : tm1.dns-tm.com
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : teams.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns1.s-msedge.net
+Registrant du serveur autoritatifs : None
+ 
+Nom de domaine : statics.teams.cdn.office.ne'
+Entreprise qui possède ce nom de domaine : None
+Serveurs autoritatifs : n3dscd.akamai.net
+Registrant du serveur autoritatifs : None
+ 
+Nom de domaine : uclouvain-my.sharepoint.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns4-33.azure-dns.info
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : res-1.cdn.office.ne'
+Entreprise qui possède ce nom de domaine : None
+Serveurs autoritatifs : n2dscd.akamaiedge.net
+Registrant du serveur autoritatifs : None
+ 
+Nom de domaine : update.electronjs.or'
+Entreprise qui possède ce nom de domaine : None
+Serveurs autoritatifs : ns02.herokudns.net
+Registrant du serveur autoritatifs : None
+ 
+Nom de domaine : media.licdn.co'
+Entreprise qui possède ce nom de domaine : Privacy Protection
+Serveurs autoritatifs : n7dscg2.akamai.net
+Registrant du serveur autoritatifs : Akamai Technologies, Inc.
+ 
+Nom de domaine : v20.events.data.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns4-201.azure-dns.info
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : eu-mobile.events.data.microsoft.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns4-08.azure-dns.info
+Registrant du serveur autoritatifs : Microsoft Corporation
+ 
+Nom de domaine : windows.msn.co'
+Entreprise qui possède ce nom de domaine : Microsoft Corporation
+Serveurs autoritatifs : ns1.a-msedge.net
+Registrant du serveur autoritatifs : None
+ 

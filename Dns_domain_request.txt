@@ -1,0 +1,80 @@
+Number of domain names requested : 23
+Domain : mobile.pipe.aria.microsoft.co
+ Requested after : 0:00:00
+ Requested after : 0:00:00.000146
+Domain : api-emea.flightproxy.teams.microsoft.co
+ Requested after : 0:00:03.433753
+ Requested after : 0:00:03.433753
+Domain : emea.cc.skype.co
+ Requested after : 0:00:03.434302
+ Requested after : 0:00:03.434464
+Domain : api.flightproxy.teams.microsoft.co
+ Requested after : 0:00:03.435033
+ Requested after : 0:00:03.435164
+Domain : euaz.relay.teams.microsoft.co
+ Requested after : 0:00:03.799059
+ Requested after : 0:00:03.799269
+Domain : ipv4only.arp
+ Requested after : 0:00:03.860871
+ Requested after : 0:00:30.316752
+ Requested after : 0:01:58.353059
+Domain : eu-mobile.events.data.microsoft.co
+ Requested after : 0:01:04.406778
+ Requested after : 0:01:04.407214
+ Requested after : 0:02:38.037672
+ Requested after : 0:02:38.037676
+ Requested after : 0:02:38.069330
+ Requested after : 0:02:38.069330
+Domain : substrate.office.co
+ Requested after : 0:01:07.912365
+ Requested after : 0:01:07.912669
+ Requested after : 0:02:40.410003
+ Requested after : 0:02:40.410279
+Domain : server.events.data.microsoft.co
+ Requested after : 0:01:08.439727
+ Requested after : 0:01:08.439901
+Domain : login.microsoftonline.co
+ Requested after : 0:01:57.130068
+ Requested after : 0:01:57.130194
+Domain : ocws.officeapps.live.co
+ Requested after : 0:01:57.799447
+ Requested after : 0:01:57.799634
+Domain : whiteboard.microsoft.co
+ Requested after : 0:01:57.892059
+ Requested after : 0:01:57.892211
+Domain : teams.microsoft.co
+ Requested after : 0:01:58.435567
+ Requested after : 0:01:58.435688
+Domain : statics.teams.cdn.office.ne
+ Requested after : 0:01:58.580307
+ Requested after : 0:01:58.580475
+Domain : uclouvain-my.sharepoint.co
+ Requested after : 0:01:59.149732
+ Requested after : 0:01:59.150021
+ Requested after : 0:01:59.187677
+ Requested after : 0:01:59.199274
+Domain : res-1.cdn.office.ne
+ Requested after : 0:02:01.099344
+ Requested after : 0:02:01.099548
+Domain : update.electronjs.or
+ Requested after : 0:02:03.443064
+ Requested after : 0:02:03.443386
+ Requested after : 0:02:03.480138
+Domain : eur.loki.delve.office.co
+ Requested after : 0:02:05.046320
+ Requested after : 0:02:05.046525
+Domain : media.licdn.co
+ Requested after : 0:02:05.568990
+ Requested after : 0:02:05.569595
+Domain : v20.events.data.microsoft.co
+ Requested after : 0:02:34.429506
+ Requested after : 0:02:34.429716
+ Requested after : 0:02:34.471438
+Domain : assets.msn.co
+ Requested after : 0:02:38.711654
+ Requested after : 0:02:38.711778
+Domain : windows.msn.co
+ Requested after : 0:02:41.081837
+ Requested after : 0:02:41.082146
+Domain : www.msn.co
+ Requested after : 0:02:41.419357
