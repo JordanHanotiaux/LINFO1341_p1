@@ -19,22 +19,16 @@ def dns_resolution_evolution(file_path):
                 continue
             resolutions.append((time, domain))
 
-    # Sort resolutions by time
     resolutions.sort()
 
-    # Convert the list of times to a NumPy array
     times = np.array([r[0] for r in resolutions])
 
-    # Compute the elapsed time between the first resolution and each subsequent resolution
     time_elapsed = times - times[0]
 
-    # Create a list of the number of resolutions at each time point
     resolution_counts = np.arange(1, len(times) + 1)
 
-    # Plot the resolution counts vs. time elapsed
     plt.step(time_elapsed, resolution_counts)
 
-    # Add axis labels and title
     plt.xlabel('Time Elapsed (s)')
     plt.ylabel('Number of DNS Resolutions')
     plt.title('Evolution of DNS Resolutions over Time')
@@ -83,16 +77,13 @@ def plot_tls_protocol_usage_over_time(file_path):
 
     capture.close()
 
-    # Convert the list of times to a NumPy array and subtract the first time to obtain elapsed time
     times = np.array(times)
     elapsed_time = times - times[0]
 
-    # Create NumPy arrays of the protocol counts for each version
     tls_v1_counts = np.array(tls_v1_counts)
     tls_v1_2_counts = np.array(tls_v1_2_counts)
     tls_v1_3_counts = np.array(tls_v1_3_counts)
 
-    # Create a plot of the protocol counts vs. elapsed time
     fig, ax = plt.subplots()
     ax.step(elapsed_time, tls_v1_counts, label="TLSv1")
     ax.step(elapsed_time, tls_v1_2_counts, label="TLSv1.2")
@@ -129,14 +120,11 @@ def handshake_usage_over_time(file_path):
 
     capture.close()
 
-    # Convert the list of times to a NumPy array and subtract the first time to obtain elapsed time
     times = np.array(times)
     elapsed_time = times - times[0]
 
-    # Create NumPy arrays of the protocol counts for each version
     handshake_counts = np.array(handshake_counts)
 
-    # Create a plot of the protocol counts vs. elapsed time
     fig, ax = plt.subplots()
     ax.step(elapsed_time, handshake_counts, label="Client Hello")
     ax.legend()
@@ -148,4 +136,139 @@ def handshake_usage_over_time(file_path):
     plt.show()
 
 
-plot_tls_protocol_usage_over_time('Teams_Complet.pcapng')
+def plot_tcp_usage_over_time(file_name):
+    capture = pyshark.FileCapture(file_name, display_filter="tcp")
+
+    tcp_count = 0
+    tcp_counts = []
+    times = []
+
+    first_packet = capture[0]
+    last_packet = capture[-1]
+    start_time = float(first_packet.sniff_timestamp)
+    end_time = float(last_packet.sniff_timestamp)
+
+    for packet in capture:
+        tcp_count += 1
+        tcp_counts.append(tcp_count)
+        times.append(float(packet.sniff_time.timestamp()))
+    capture.close()
+
+    times = np.array(times)
+    elapsed_time = times - times[0]
+
+    tcp_counts = np.array(tcp_counts)
+
+    fig, ax = plt.subplots()
+    ax.step(elapsed_time, tcp_counts)
+    ax.legend()
+    ax.set_xlabel("Elapsed Time (s)")
+    ax.set_ylabel("TCP Protocol Usage Count")
+    ax.set_title("TCP Protocol Usage over Time")
+
+    # Show the plot
+    plt.show()
+
+
+def plot_rtcp_usage_over_time(file_name):
+    capture = pyshark.FileCapture(file_name, display_filter="rtcp")
+
+    rtcp_count = 0
+    rtcp_counts = []
+    times = []
+
+    first_packet = capture[0]
+    last_packet = capture[-1]
+    start_time = float(first_packet.sniff_timestamp)
+    end_time = float(last_packet.sniff_timestamp)
+
+    for packet in capture:
+        rtcp_count += 1
+        rtcp_counts.append(rtcp_count)
+        times.append(float(packet.sniff_time.timestamp()))
+    capture.close()
+
+    times = np.array(times)
+    elapsed_time = times - times[0]
+
+    rtcp_counts = np.array(rtcp_counts)
+
+    fig, ax = plt.subplots()
+    ax.step(elapsed_time, rtcp_counts)
+    ax.legend()
+    ax.set_xlabel("Elapsed Time (s)")
+    ax.set_ylabel("RTCP Protocol Usage Count")
+    ax.set_title("RTCP Protocol Usage over Time")
+
+    # Show the plot
+    plt.show()
+
+
+def plot_udp_usage_over_time(file_name):
+    capture = pyshark.FileCapture(file_name, display_filter="udp")
+
+    udp_count = 0
+    udp_counts = []
+    times = []
+
+    first_packet = capture[0]
+    last_packet = capture[-1]
+    start_time = float(first_packet.sniff_timestamp)
+    end_time = float(last_packet.sniff_timestamp)
+
+    for packet in capture:
+        udp_count += 1
+        udp_counts.append(udp_count)
+        times.append(float(packet.sniff_time.timestamp()))
+    capture.close()
+
+    times = np.array(times)
+    elapsed_time = times - times[0]
+
+    udp_counts = np.array(udp_counts)
+
+    fig, ax = plt.subplots()
+    ax.step(elapsed_time, udp_counts)
+    ax.legend()
+    ax.set_xlabel("Elapsed Time (s)")
+    ax.set_ylabel("UDP Protocol Usage Count")
+    ax.set_title("UDP Protocol Usage over Time")
+
+    # Show the plot
+    plt.show()
+
+
+def plot_quic_usage_over_time(file_name):
+    capture = pyshark.FileCapture(file_name, display_filter="quic")
+
+    quic_count = 0
+    quic_counts = []
+    times = []
+
+    first_packet = capture[0]
+    last_packet = capture[-1]
+    start_time = float(first_packet.sniff_timestamp)
+    end_time = float(last_packet.sniff_timestamp)
+
+    for packet in capture:
+        quic_count += 1
+        quic_counts.append(quic_count)
+        times.append(float(packet.sniff_time.timestamp()))
+
+    capture.close()
+
+    times = np.array(times)
+    elapsed_time = times - times[0]
+
+    quic_counts = np.array(quic_counts)
+
+    fig, ax = plt.subplots()
+    ax.step(elapsed_time, quic_counts)
+    ax.legend()
+    ax.set_xlabel("Elapsed Time (s)")
+    ax.set_ylabel("QUIC Protocol Usage Count")
+    ax.set_title("QUIC Protocol Usage over Time")
+
+    # Show the plot
+    plt.show()
+
