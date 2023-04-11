@@ -1,5 +1,4 @@
 import pyshark
-import dns.resolver
 import whois
 
 
@@ -56,10 +55,8 @@ def dns_request(file_path):
 
 
 def extract_authoritative_servers(filename):
-    # Créer un analyseur PyShark pour lire le fichier PCAPNG
     capture = pyshark.FileCapture(filename, display_filter='dns')
 
-    # Créer un dictionnaire pour stocker les serveurs autoritatifs pour chaque nom de domaine résolu
     domain_names = {}
 
     for packet in capture:
@@ -72,7 +69,6 @@ def extract_authoritative_servers(filename):
         except AttributeError:
             pass
 
-    # Écrire les résultats dans un fichier texte
     with open('authoritative_servers.txt', 'w') as f:
         for domain, servers in domain_names.items():
             f.write("Nom de domaine : " + domain + "'\n")
@@ -81,14 +77,10 @@ def extract_authoritative_servers(filename):
             f.write("Registrant du serveur autoritatifs : " + str(get_registrant(servers)))
             f.write("\n \n")
 
-    # Fermer l'analyseur PyShark
     capture.close()
 
 
 def get_registrant(server):
-    """
-    Recherche WHOIS pour le serveur donné et retourne le registrant
-    """
     try:
         w = whois.whois(server)
         org = w.org
@@ -99,7 +91,3 @@ def get_registrant(server):
     except whois.parser.PywhoisError:
         return "Information WHOIS non trouvée"
 
-
-
-
-get_validity_certificate('Teams_Complet.pcapng')
